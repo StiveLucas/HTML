@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu formulário</title>
+</head>
+<body>
+
+    <h3>Formulário</h3>
+
+    <!--form serve para criar formulários para prencher-->
+    <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+
+        <div>
+            <!--Input tem várias utilidades-->
+
+            <!--Esse input tem o type text, ou seja é um string, aceita tudo.-->
+            <!--name - Dê um nome ao input.
+                minlength - Da um minimo de caracter que precisa ser inserido.
+                maxlength - Da um máximo de caracter que precisa ser inserido.
+                required - Faz com que sejá obrigatorio o preenchimento do campo.
+                placeholder - Deixe um texto dentro do campo como se fosse uma dica para o usuário.
+            -->
+            <input type="text" name="campo_texto" minlength="5" maxlength="20" required placeholder="Digite seu nome">
+        </div>
+
+        <div>
+            <!--
+                Type email - só aceita emails validos, mas não confie, utilize o JavaScript para fazer a validação com segurança
+            -->
+            <input type="email" name="campo_email" required>
+        </div>
+
+        <div>
+            <!--
+                Type passaword - Trata o texto como uma senha, ocultando o texto
+            -->
+            <input type="password" name="campo_senha" required>
+        </div>
+
+        <div>
+            <!--
+                Type number - só permite números.
+                min - define o minimo permitido.
+                max - define o maximo permitido.
+                step - permite números com casas decimais.
+            -->
+            <input type="number" name="campo_numero" required min="0" max="10" step="0.01">
+        </div>
+
+        <div>
+            <!--
+                Type url - só permite links
+            -->
+            <input type="url" name="campo">
+        </div>
+
+        <div>
+            <input type="date" name="campo_date">
+        </div>
+
+        <div>
+            <input type="time" name="campo_Time">
+        </div>
+
+        <div>
+            <!--Esse input tem o type submit, ele vira um botão-->
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+    
+</body>
+</html>
