@@ -129,6 +129,16 @@ Input- O input tem varias funções, com funções diferentes
 					
 					(Foto de exemplo)
 
+4.Funções de clik.
+
+	onclick = "<nome da função do JS ou use um alert("<Texto que desejar>")>" - executa uma função dada por você quando clicado com o botão esquerdo do mouse.
+
+	oncontextmenu = "<nome da função do JS ou use um alert("<Texto que desejar>")>" - executa uma função dada por você quando clicado com o botão direito do mouse.
+
+	onmouseleave = "<nome da função do JS ou use um alert("<Texto que desejar>")>" - executa uma função dada por você quando o mouse entra dentro do elemento.
+
+	onmousemove = "<nome da função do JS ou use um alert("<Texto que desejar>")>" - executa uma função dada por você quando o mouse se move dentro do elemento.
+
+	onmouseleave = "<nome da função do JS ou use um alert("<Texto que desejar>")>" - executa uma função dada por você quando o mouse sai de dentro do elemento.
 
 
-		
