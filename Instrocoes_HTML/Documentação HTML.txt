@@ -141,4 +141,13 @@ Input- O input tem varias funções, com funções diferentes
 
 	onmouseleave = "<nome da função do JS ou use um alert("<Texto que desejar>")>" - executa uma função dada por você quando o mouse sai de dentro do elemento.
 
+	Obs: Essas funções só podem ser usadas uma vez no elemento. Para executar mais de um, use o Lista de eventos.
+
+	Lista de eventos
+	
+	Essa função permite executar varios evenos no mesmo elemento.
+
+	let variavel_exemplo = document.querySelector("<elemento ou id dele>");
+
+	variavel_exemplo.addEventListener("<Evento que voce deseja por exemplo o click(se quiser outro dê um pesquisada)>, <função que você fez ou você pode fazer a função aqui 									  mesmo>") - Com isso você pode repedir esse codigo com diferentes funções que todas vão ser executadas. 
 
