@@ -99,17 +99,17 @@ Input- O input tem varias funções, com funções diferentes
 
 		minlength - Da um minimo de caracter que precisa ser inserido.
 
-                maxlength - Da um máximo de caracter que precisa ser inserido.
+        maxlength - Da um máximo de caracter que precisa ser inserido.
 
 		min - define o mínimo do números permitido no type number.
 
-                max - define o maximo do número permitido no type number.
+        max - define o maximo do número permitido no type number.
 
-                step - permite números com casas decimais no type number.
+        step - permite números com casas decimais no type number.
 
-                required - Faz com que sejá obrigatorio o preenchimento do campo.
+        required - Faz com que sejá obrigatorio o preenchimento do campo.
 
-                placeholder - Deixe um texto dentro do campo como se fosse uma dica para o usuário.
+    	placeholder - Deixe um texto dentro do campo como se fosse uma dica para o usuário.
 
 		readonly - Impede do texto digitado de ser apagado.
 
@@ -123,7 +123,7 @@ Input- O input tem varias funções, com funções diferentes
 
 		textarea - é um campo grande para texto, bem parecido com o input text
 
-		datalist - Ele faz um campo ter varias opções meio que um filtro, ao digitar uma letrar ele reduz  a lista com palavras q possue a letra digitada
+		datalist - Ele faz um campo ter varias opções meio que um filtro, ao digitar uma letrar ele reduz  a lista com palavras q possue a letra 				   digitada
 
 				Exemplo de uso:
 					
@@ -150,4 +150,5 @@ Input- O input tem varias funções, com funções diferentes
 	let variavel_exemplo = document.querySelector("<elemento ou id dele>");
 
 	variavel_exemplo.addEventListener("<Evento que voce deseja por exemplo o click(se quiser outro dê um pesquisada)>, <função que você fez ou você pode fazer a função aqui 									  mesmo>") - Com isso você pode repedir esse codigo com diferentes funções que todas vão ser executadas. 
+
 
