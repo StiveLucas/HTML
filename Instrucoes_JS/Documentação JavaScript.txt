@@ -86,9 +86,9 @@ Console
 
 		.AddEventListener
 			
-			O addEventListener é usado quando você quer que a página reaja a alguma ação do usuário. Com ele você pode adicionar eventos e métodos para 			serem executados quando algo acontecer na sua página, como clicar em um botão, digitar em um campo, passar o mouse, enviar formulário e outras 			interações.
+			O addEventListener é usado quando você quer que a página reaja a alguma ação do usuário. Com ele você pode adicionar eventos e métodos para serem executados 				quando algo acontecer na sua página, como clicar em um botão, digitar em um campo, passar o mouse, enviar formulário e outras interações.
 
-			Ele funciona como um “observador”. Você escolhe um elemento da página, define qual evento quer observar e informa o que deve acontecer quando 			esse evento ocorrer.
+			Ele funciona como um “observador”. Você escolhe um elemento da página, define qual evento quer observar e informa o que deve acontecer quando esse evento ocorrer.
 
 			Ou seja, ele liga uma ação do usuário a uma função do JavaScript.
 
@@ -129,7 +129,7 @@ Console
 
 			imagem.getAttribute("<nome do atributo que o elemento possue(no caso vai ser o "src")>") - Exibi o valor desse atributo do elemento.
 			
-			imagem.setAttribute("<nome do atributo para definir o atributo(pode ser um atributo que não exista no elemento.) ou alterar>", "<novo valor que 					    deseja adcionar>") - Permite alterar ou definir valores do atributo do elemento.
+			imagem.setAttribute("<nome do atributo para definir o atributo(pode ser um atributo que não exista no elemento.) ou alterar>", "<novo valor que 					    	deseja adcionar>") - Permite alterar ou definir valores do atributo do elemento.
 
 			imagem.removeAttribute("<nome do atributo do elemento>") - Remove o atributo do elemento.
 
@@ -169,7 +169,16 @@ Console
 
 				Para remover use apenas:
 
-					<nome da variavel>.remove;
+					<nome da variavel>.remove();
+	Atributos
+
+		.TextContent
+
+			Pegar o valor dos elementos html como textos ou numeros. Exceto que sejam do tipo input. Exemplo: variávelExemplo.textContent; (Pegou o valor do elemento).
+
+		.Value
+
+			Pegar o valor de elementos html que seja do tipo input.  Exemplo: variávelExemplo.value; (Pegou o valor do elemento).
 
 		.Min
 
@@ -287,5 +296,6 @@ Objetos
 	Outras funções:
 
 		delete.<nome do objeto> - deleta o objeto ou uma propriedade dele.
+
 
 
