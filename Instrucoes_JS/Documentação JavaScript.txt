@@ -1,0 +1,291 @@
+Documentação JavaScript
+
+Variáveis
+	Para criar uma variável apenas use um var, assim:
+
+	let  <nome da variável> = <valor>;
+
+Arrays
+
+	console.log(<nome do array>.length) - Mostra quantos elementos tem um array.
+
+	console.table(<nome do array>) - Mostra uma tabela do array.
+
+	<nome do array>.push(<nome ou valor que pretende adicionar>) - Adiciona um elemento no final do array.
+
+	<nome do array>.unshift(<nome ou valor que pretende adicionar>) - Adiciona um elemento no inicio do array.
+
+	<nome do array>.shift() - Remove o elemento do inicio do array.
+
+	<nome do array>.pop() - Remove o ultimo elemento do array.
+
+	<nome do array> = <nome do array>.concat(<nome de outro array>) - Junto os array.
+
+	console.log(<nome do array>.includes(<valor ou nome que está procurando>)) - Procura se o elemento existe no array.
+
+	console.log(<nome do array>.indexOf(<valor ou nome que está procurando>)) - Procura o index do elemento array.
+
+	<nome do array>.joihn("<coloque algo para separar os dados>") - Exibi todos os dados do array em um só.
+
+
+	Organizando Array
+
+		<nome do array>.sort() - Organiza em ordem alfabetica.
+
+		<nome do array>.reverse() - Inverte a ordem.
+
+
+Console
+
+	Essa função permite Exibr varias coisas sempre no console do site.
+
+	console.log(<o que você quiser exibir>) - Exibi desde uma variável a strings.
+
+	console.log(typeof(<nome da variável>)) - Exibi o tipo da variável.
+
+	console.table(<nome do array>) - Exibi uma lista do arry.
+
+
+🌐 Document (DOM)
+
+	Essa parte serve para visualizar e manipular o HTML e o CSS da página.	
+
+	document.getElementyById("<nome do id que procura>") - Guarda todos os elementos que tem o id definido com o nome que você procura.
+
+	Funções para usar com document.getElementyById:
+
+		let documento = document.getElementyById("<nome do id que procura>");
+
+		documento.id - Mostra o id do elemento.
+
+		documento.className - Mostra o nome da classe do elemento.
+
+		documento.textContent - Mostra o conteúdo do hrml.
+
+	QuerySelector
+
+		O querySelector serve para procurar elementos na página usando:
+
+			. antes do nome → classe
+
+			# antes do nome → id
+
+			Já o querySelectorAll pega todos os elementos que combinam com o que você digitou.
+
+			document.querySelector("<nome da  classe, id ou elemento>") - Esse pega o elemento buscando pelo .(classes) ou #(id).
+
+			documento.querySelectorAll("<nome do titulo, id ou elemento HTML>") - Pega todos elemtentos que tem a propriedade que você digitou.
+
+			Você tambem pode procurar um atributo que possue um valor expecifico. Exemplo:
+
+				documento.querySelectorAll("[class = 'texto']") - Aqui vai todos elementos que possue o atributo class com o valor texto.
+
+
+	Propriedade que da pra usar depois do QuerrySelector:
+
+
+		.AddEventListener
+			
+			O addEventListener é usado quando você quer que a página reaja a alguma ação do usuário. Com ele você pode adicionar eventos e métodos para 			serem executados quando algo acontecer na sua página, como clicar em um botão, digitar em um campo, passar o mouse, enviar formulário e outras 			interações.
+
+			Ele funciona como um “observador”. Você escolhe um elemento da página, define qual evento quer observar e informa o que deve acontecer quando 			esse evento ocorrer.
+
+			Ou seja, ele liga uma ação do usuário a uma função do JavaScript.
+
+			
+			Obs: os tipos de eventos que vai pedir na linha abaixo você poderá ver mais abaixo.
+
+			Variavel_Exemplo.addEventListener("<tipo do evento>", () =>{
+				código;
+			})
+
+			Tipos de eventos:
+
+				click - quando o elemento for clicado ele executara a função.
+
+				input - quando o input for clicado ou alterado.
+
+
+		.ClassList
+	
+			Depois de selecionar o elemento usando o querrySelector, você pode mexer nas classes dele.
+
+			let documento = document.querySelector("<<nome da  classe, id ou elemento>");
+			
+			documento.classList - ver tudo da classe, nome, valor ect... .
+
+			documento.classList.add("<nome da classe>") = Adciona a classe que já tenha sido criada. Você pode adcionar mais classes apenas separe por 								      virgulas			
+
+			documento.classList.remove("<nome da classe, você também pode remover várias classes basta separar po virgula>") - remove a classe.
+
+			documento.classList.toggle("<nome da classe>") - Verifica se essa classe existe no elemento se não existir ele adciona.
+
+
+		Manipulando atributos de elementos HTML com getAttribute, setAttribute e removeAttribute:
+
+			Com essas funções você vai poder alterar ou definir elementos no HTML.
+
+			let imagem = document.querySelector("img");
+
+			imagem.getAttribute("<nome do atributo que o elemento possue(no caso vai ser o "src")>") - Exibi o valor desse atributo do elemento.
+			
+			imagem.setAttribute("<nome do atributo para definir o atributo(pode ser um atributo que não exista no elemento.) ou alterar>", "<novo valor que 					    deseja adcionar>") - Permite alterar ou definir valores do atributo do elemento.
+
+			imagem.removeAttribute("<nome do atributo do elemento>") - Remove o atributo do elemento.
+
+		.CreateElement
+
+			Você pode criar novos elementos usando o document.createElement();
+
+			document.createElement("<elemento HTML>") - Cria um elemento no final da pagina.
+
+			let novo_elemento = document.createElement("<elemento HTML>");
+
+			novo_elemento.innerText("<Texto ou valor que deseja adcionar>") - Adciona texto ou valor ao novo elemento.
+
+			
+			Há outra forma de adcionar e controlar o posicionamento do elemento do HTML.
+
+			let variávelExemplo1 = document.querySelector("#<nome do id do elemento>");
+			
+			let variávelExemplo2 = document.createElement("<elemento HTML>").textContent("<texto q deseja adcionar>");
+		
+			variávelExemplo1.insertAdjacentHTML("<Onde vai ficar>", variávelExemplo2) - Adciona o elemento onde você deseja, usando:
+
+												    beforebegin - Adciona antes e fora do elemento.
+
+												    afterbegin - Adciona dentro do elemento mas no começo dele.
+
+												    beforeend - Adciona dentro do elemento mas no final dele.
+
+												    afterend - Adciona depois e fora do elemento.
+
+			Para adcionalos na pagina use:
+
+				document.body.appendChild(<nome da variavel que carrega o novo elemento>);
+
+
+			Removendo elementos
+
+				Para remover use apenas:
+
+					<nome da variavel>.remove;
+
+		.Min
+
+			determina um valor minino para um variável do tipo inteiro ou real. Exemplo: variávelExemplo.min = 3;
+
+		.Max
+
+			determina um valor maximo para um variável do tipo inteiro ou real. Exemplo: variávelExemplo.max = 10;
+
+		.Style
+
+			Com essa função você pode mexer no style do elemnto essas são as funções que você pode usar depois do .style :
+
+			opacity - mexe na opacidade do elemento.
+
+			backgroundColor - Mexe na cor de fundo do elemento, coloque 
+	
+
+	Métodos
+
+		Cada um tem sua utilidade e forma de usar.
+
+		
+
+		Propagation
+
+			Isso é um erro que pode executar várias funções ou métodos no código por causa dos elementos pai. Para executar somente no elemento certo 			sempre coloque: event nos parâmetros da função e dentro da função coloque stopPropagation();
+
+			Exemplo de uso:
+
+				event(Isso seria a variável que é o elemento da função).stopPropagation();
+
+		PreventDefault
+
+			Impede de Links ou butões de funcionarem, apenas use preventDefault() dentro de funções ou addEventListener;
+		
+Opérador Ternário
+
+	Esse operador é bem parecido com o if else, se o valor for verdadeiro ele executa a primeira opção designada caso não seja ele executa outra função designada.
+
+	Exemplo:   
+
+		var valor = 10;
+		valor == 10 ? "Sim" : "Não";
+
+	a interrogação basicamente pergunta se o valor é igual a 10, se for ele executa a primeira opção que é sim, se não executa o não.
+
+
+Funções
+
+	Formula: 
+
+		function <dê um nome á função>(<Se quiser use parametros>){
+			código
+		}
+
+	Para usar a função:
+
+		<nome da função que você deu>(<Valores dos parâmetros caso você usou>);
+
+
+	SetTimeout()
+
+		executa a função dada por você depois do tempo determinada por milissegundos.
+
+		Formula: setTimeout(() =>{
+			      codigo
+			 }, <tempo em milissegundos>);
+
+Objetos
+
+	Para definir objetos:
+
+	let <nome do objeto no formato de uma variavel> = {
+		
+		//Aqui você vai definir tudo do seu objeto, vamos supor que seu objeto seja uma Pessoa, ela precisa ter nome, idade, cpf, etc...
+
+		//Proriedades
+	
+		Formula pra fazer propriedades: <nome da propriedade no formato de uma variavel>: <valor da propriedade>,
+		Obs: não esqueça da virgula.
+
+		Exemplos:
+		nome: "Goku",
+		idade: 45,
+		poder: 8000,
+		gênero: "Masculino",
+
+		//Você também pode usar métodos que são basicamente funções
+
+		//Métodos
+		apresentar nome: function(){
+			return this.nome + " " + this.apelido
+		}
+
+		//O this serve para dizer pegue o nome ou apelodo DESSE objeto.
+
+
+		//Você pode ter propriedades que tenha mais dados ao invés de um, então você pode fazer uma propriedade com um array.
+
+		Exemplo:
+
+		hobbies: [
+			"Programação",
+			"Cinema",
+			"Jogos"
+		]
+	}
+
+	Uma forma de criar um novo objeto a partir de outro:
+
+		let <nome do novo objeto em formato de variavel> = {...<nome do objeto que já existe>}
+
+	
+	Outras funções:
+
+		delete.<nome do objeto> - deleta o objeto ou uma propriedade dele.
+
+
