@@ -105,6 +105,10 @@ Console
 
 				input - quando o input for clicado ou alterado.
 
+				mouseenter - quando o mouse entrar.
+
+				mouseleave - quando o mouse sair.
+
 
 		.ClassList
 	
@@ -296,6 +300,7 @@ Objetos
 	Outras funções:
 
 		delete.<nome do objeto> - deleta o objeto ou uma propriedade dele.
+
 
 
 
