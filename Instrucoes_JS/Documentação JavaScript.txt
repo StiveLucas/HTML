@@ -109,6 +109,7 @@ Console
 
 				mouseleave - quando o mouse sair.
 
+				keypress/keydown/keyup - Todos eles são quando você precisiona o teclado. Use uma variavel event da função e use o if(event.key === "<tecla que deseja>") 											 Assim poderá usar a função.
 
 		.ClassList
 	
@@ -300,6 +301,7 @@ Objetos
 	Outras funções:
 
 		delete.<nome do objeto> - deleta o objeto ou uma propriedade dele.
+
 
 
 
