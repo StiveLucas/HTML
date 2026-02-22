@@ -210,7 +210,7 @@ Console
 
 		Propagation
 
-			Isso é um erro que pode executar várias funções ou métodos no código por causa dos elementos pai. Para executar somente no elemento certo 			sempre coloque: event nos parâmetros da função e dentro da função coloque stopPropagation();
+			Isso é um erro que pode executar várias funções ou métodos no código por causa dos elementos pai. Para executar somente no elemento certo sempre coloque: 						event nos parâmetros da função e dentro da função coloque stopPropagation();
 
 			Exemplo de uso:
 
@@ -219,6 +219,23 @@ Console
 		PreventDefault
 
 			Impede de Links ou butões de funcionarem, apenas use preventDefault() dentro de funções ou addEventListener;
+
+		Math
+
+			Essa função permite fazer varias coisas com os números, veja alguma delas:
+
+			Math.random()
+
+				Devolve um númerpo de 0 a 1 aleatório. Caso deseje aumentar o número multiplique Math.random() por o valor que deseja. Exemplo:
+
+					Math.random() * 20   Aqui ele vai dar um número aleatório de 0 a 20.
+
+			Math.floor()
+
+				Devolve o valor decimal colocado nele em um número inteiro. Exemplo:
+
+					Math.floor(44.66)	Aqui o valor vai ficar 44.
+
 		
 Opérador Ternário
 
@@ -301,6 +318,7 @@ Objetos
 	Outras funções:
 
 		delete.<nome do objeto> - deleta o objeto ou uma propriedade dele.
+
 
 
 
